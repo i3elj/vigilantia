@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "afb4713971343a15e81124f3157a469f",
+    "packages": [
+        {
+            "name": "i3elj/agmen",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/i3elj/agmen.git",
+                "reference": "a681251365d89b5cc9a549695c027d5126116e50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/i3elj/agmen/zipball/a681251365d89b5cc9a549695c027d5126116e50",
+                "reference": "a681251365d89b5cc9a549695c027d5126116e50",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "init.php",
+                    "src/constants.php",
+                    "src/global_functions.php"
+                ],
+                "psr-4": {
+                    "Agmen\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "i3elj",
+                    "email": "guisande.bernardo@gmail.com"
+                }
+            ],
+            "description": "A simple web library",
+            "support": {
+                "issues": "https://github.com/i3elj/agmen/issues",
+                "source": "https://github.com/i3elj/agmen/tree/1.0.0"
+            },
+            "time": "2025-09-30T18:59:18+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}

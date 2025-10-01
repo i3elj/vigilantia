@@ -1,0 +1,23 @@
+{
+	"name": "vigilantia",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"parcel": "npx parcel ./assets/js/*.js --dist-dir ./public/js --no-hmr --port 3001",
+		"build:parcel": "npx parcel build src/*.js --dist-dir ./public/js --no-source-maps",
+		"tailwind": "npx @tailwindcss/cli -i ./assets/css/style.css -o ./public/css/output.css --watch",
+		"build:tailwind": "npx @tailwindcss/cli -i ./assets/css/style.css -o ./public/css/output.css --minify"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"dependencies": {
+		"@tailwindcss/cli": "^4.1.13",
+		"tailwindcss": "^4.1.13"
+	},
+	"devDependencies": {
+		"daisyui": "^5.1.26",
+		"parcel": "^2.16.0"
+	}
+}
