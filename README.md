@@ -2,6 +2,12 @@
 
 Vigilantia is a modern, interactive web application designed to empower communities by providing a platform for reporting and visualizing crime incidents through an intuitive map-based interface. Built with PHP, JavaScript, and modern web technologies, Vigilantia helps create safer neighborhoods through community awareness and data visualization.
 
+Example taken from [Leaflet.heat](https://github.com/Leaflet/Leaflet.heat)
+
+<div align="center">
+   <img src="./github/example.png" width="550px"/><br>
+</div>
+
 ## 🚀 Quick Start
 
 ### Prerequisites
