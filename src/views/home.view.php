@@ -1,14 +1,31 @@
-<?php use function Agmen\globals; ?>
+<?php
+use function Agmen\globals;
+use function Agmen\snip;
+?>
 
-<?= globals("head", ["title" => "Test"]) ?>
+<?= globals("head", [
+	"title" => "Test",
+	"scripts" => ["/js/main.js", "/js/crimes.js"],
+]) ?>
 
-<main class="p-md">
-	<div class="card card-border border-base-300 bg-base-100 w-fit shadow">
-		<div class="card-body">
-			<h4 class="card-title text-primary">Hello world</h4>
-			<p class="text-primary-content">testing 123</p>
-		</div>
+<div id="controls" class="absolute flex items-center w-full bottom-lg z-1">
+	<div class="flex items-center justify-end flex-1 px-sm gap-sm"></div>
+
+	<div>
+		<a class="btn btn-xl btn-error shadow-lg"
+			href="<?= r->getPath("report") ?>"
+		>
+			<i class="ph ph-warning"></i>
+			<p class="w-fit">Report Incident</p>
+		</a>
 	</div>
-</main>
+
+	<div class="flex items-center justify-start flex-1 px-sm gap-sm">
+		<?= snip("getCurrentLocationBtn") ?>
+	</div>
+</div>
+
+<div id="map" class="w-screen h-screen bg-red-100 z-0"></div>
+
 
 <?= globals("footer") ?>
