@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "i3elj/agmen",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/i3elj/agmen.git",
-                "reference": "a681251365d89b5cc9a549695c027d5126116e50"
+                "reference": "a5a3fe3d947ab77f2c4b524eaa548ee05696787a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/i3elj/agmen/zipball/a681251365d89b5cc9a549695c027d5126116e50",
-                "reference": "a681251365d89b5cc9a549695c027d5126116e50",
+                "url": "https://api.github.com/repos/i3elj/agmen/zipball/a5a3fe3d947ab77f2c4b524eaa548ee05696787a",
+                "reference": "a5a3fe3d947ab77f2c4b524eaa548ee05696787a",
                 "shasum": ""
             },
             "type": "library",
@@ -44,9 +44,9 @@
             "description": "A simple web library",
             "support": {
                 "issues": "https://github.com/i3elj/agmen/issues",
-                "source": "https://github.com/i3elj/agmen/tree/1.0.0"
+                "source": "https://github.com/i3elj/agmen/tree/1.0.2"
             },
-            "time": "2025-09-30T18:59:18+00:00"
+            "time": "2025-10-02T20:27:31+00:00"
         }
     ],
     "packages-dev": [],
