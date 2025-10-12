@@ -20,13 +20,10 @@ export default class LeafMap {
 		LeafMap.instance = this;
 	}
 
-	async setMapPosition() {
-		try {
-			const [lat, lon] = await LocationProvider.getPosition();
-			this.map.setView([lat, lon], 15);
-		} catch (error) {
-			console.error("Failed to get location:", error);
-		}
+	setMapPosition() {
+		LocationProvider.getPosition()
+			.then(([lat, lng]) => this.map.setView([lat, lng], 13))
+			.catch((err) => console.error("Failed to get location:", err));
 	}
 
 	setMarker(lat, lng) {

@@ -7,6 +7,7 @@ use Handlers\ReportHandler;
 
 require "../config.php";
 require "../vendor/autoload.php";
+require '../translation-file.php';
 
 const r = new Router();
 r->path("/", "home", [], HomeHandler::class);

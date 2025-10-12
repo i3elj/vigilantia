@@ -12,11 +12,11 @@ use function Agmen\snip;
 	<div class="flex items-center justify-end flex-1 px-sm gap-sm"></div>
 
 	<div>
-		<a class="btn btn-xl btn-error shadow-lg"
+		<a class="btn btn-xl btn-error border border-error-content shadow-lg"
 			href="<?= r->getPath("report") ?>"
 		>
 			<i class="ph ph-warning"></i>
-			<p class="w-fit">Report Incident</p>
+			<p class="w-fit"><?= trans('report') ?></p>
 		</a>
 	</div>
 

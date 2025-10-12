@@ -10,10 +10,10 @@ use function Agmen\snip;
 
 <main class="p-xs">
 	<a href="<?= r->getPath("home") ?>">
-		<i class="ph ph-arrow-left mr-3xs"></i>Go Back
+		<i class="ph ph-arrow-left mr-3xs"></i><?= trans('goBack') ?>
 	</a>
 
-	<h2 class="text-center mb-sm">Report Incident</h2>
+	<h2 class="text-center mb-sm"><?= trans("report") ?></h2>
 
 	<form class="card card-body gap-md w-[620px] h-fit rounded bg-base-100 shadow"
 		hx-post="<?= r->getPath("report") ?>"
@@ -25,29 +25,31 @@ use function Agmen\snip;
 
 				<fieldset class="fieldset">
 					<legend class="fieldset-legend relative">
-						Crime/violence type
+						<?= trans("crimeType") ?>
 						<span class="absolute text-red-400 -right-4">*</span>
 					</legend>
 					<input class="input w-full"
 						type="text"
 						name="title"
-						placeholder="Felony, murder..."
+						placeholder="<?= trans("crimeTypePlaceholder") ?>"
 						data-select="input"
 						required />
 				</fieldset>
 
 				<fieldset class="fieldset">
-					<legend class="fieldset-legend">Brief Description</legend>
+					<legend class="fieldset-legend">
+						<?= trans("descriptionTitle") ?>
+					</legend>
 					<textarea class="textarea font-mono w-full"
 						name="description"
-						placeholder="Tall guy robbed..."
+						placeholder="<?= trans("descriptionPlaceholder") ?>"
 						data-select="input" ></textarea>
-					<p class="label">Optional</p>
+					<p class="label"><?= trans("optional") ?></p>
 				</fieldset>
 
 				<fieldset class="fieldset flex">
 					<legend class="fieldset-legend relative">
-						Date and Time
+						<?= trans("datetime") ?>
 						<span class="absolute text-red-400 -right-4">*</span>
 					</legend>
 					<input class="input w-full"
@@ -55,19 +57,22 @@ use function Agmen\snip;
 						name="datetime"
 						data-select="input"
 						required />
-					<button id="justNowBtn" type="button" class="btn btn-accent">Just Now!</button>
+					<button id="justNowBtn" type="button" class="btn btn-accent">
+						<?= trans("justnow") ?>
+					</button>
 				</fieldset>
 			</div>
 
 			<div class="w-full">
 				<div class="flex items-center justify-between mb-xs">
 					<h3 class="relative">
-						Evidences
+						<?= trans("evidences") ?>
 						<span class="absolute text-red-400 -right-4">*</span>
 					</h3>
 
 					<label class="btn btn-info">
-						<i class="ph ph-upload-simple"></i>Upload
+						<i class="ph ph-upload-simple"></i>
+						<?= trans("choosePhotos") ?>
 						<input id="file-input" class="hidden"
 							name="evidences"
 							type="file"
@@ -86,12 +91,14 @@ use function Agmen\snip;
 
 		<div class="relative flex flex-col gap-3xs">
 			<h3 class="relative w-fit">
-				Where?
+				<?= trans("where") ?>
 				<span class="absolute text-red-400 -right-4">*</span>
 			</h3>
 
 			<fieldset class="fieldset relative w-full">
-				<legend class="fieldset-legend">Choose a location on the map...</legend>
+				<legend class="fieldset-legend">
+					<?= trans("chooseLocation") ?>
+				</legend>
 
 				<div class="relative has-[input[name='coord'][value]:not([value=''])]:outline-secondary outline-transparent outline-2 rounded">
 					<input
@@ -111,7 +118,7 @@ use function Agmen\snip;
 
 		<div class="card-actions mt-sm">
 			<button class="btn btn-xl btn-success w-full" type="submit">
-				Send Report
+				<?= trans("sendReport") ?>
 			</button>
 		</div>
 	</form>
